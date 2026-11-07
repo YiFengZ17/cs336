@@ -1,0 +1,12 @@
+# Local experiment artifacts and data (not part of the linked assignment repos)
+a1-experiments/
+checkpoints/
+data/
+logs/
+
+# Python / tooling caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.vscode/

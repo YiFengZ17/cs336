@@ -1,0 +1,15 @@
+[submodule "assignment1-basics"]
+	path = assignment1-basics
+	url = https://github.com/YiFengZ17/assignment1-basics.git
+[submodule "assignment2-systems"]
+	path = assignment2-systems
+	url = https://github.com/YiFengZ17/assignment2-systems.git
+[submodule "assignment3-scaling"]
+	path = assignment3-scaling
+	url = https://github.com/YiFengZ17/assignment3-scaling.git
+[submodule "assignment4-data"]
+	path = assignment4-data
+	url = https://github.com/YiFengZ17/assignment4-data.git
+[submodule "assignment5-alignment"]
+	path = assignment5-alignment
+	url = https://github.com/YiFengZ17/assignment5-alignment.git
