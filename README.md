@@ -1,3 +1,5 @@
+> 2026-11-10 存储迁移已完成。当前路径、更新和下载命令见 [存储与同步指南](docs/storage-workflow.md)；下文旧相对路径通过兼容链接继续使用，服务器信息以新指南为准。
+
 # CS336
 
 Stanford CS336 (Spring 2026) assignments, linked as git submodules.

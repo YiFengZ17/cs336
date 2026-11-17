@@ -1,12 +1,18 @@
-# Local experiment artifacts and data (not part of the linked assignment repos)
-a1-experiments/
-checkpoints/
-data/
-logs/
-
-# Python / tooling caches
+# Keep code, profiles and documentation; ignore generated artifacts only.
+/data
+/checkpoints
+/logs
+/a1-experiments/data/
+/a1-experiments/checkpoints
+/a1-experiments/logs
+/a1-experiments/results
+/a1-experiments/plans/
+/a1-experiments/profiles.local.json
+/a1-experiments/profiles.server.json
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
 .vscode/
+
+/code-sync-manifest.json

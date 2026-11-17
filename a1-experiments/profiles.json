@@ -1,0 +1,74 @@
+{
+  "demo": {
+    "description": "现有小样本流程实验，不能作为讲义规模的正式结论",
+    "device": "cpu",
+    "num_threads": 2,
+    "d_model": 64,
+    "num_layers": 2,
+    "num_heads": 4,
+    "d_ff": 192,
+    "context_length": 64,
+    "batch_size": 8,
+    "num_steps": 500,
+    "warmup_iters": 20,
+    "eval_interval": 50,
+    "eval_batches": 10,
+    "sample_tokens": 256,
+    "tinystories": {
+      "directory": "datasets:tinystories/processed/bpe1000-small-v1",
+      "vocab_size": 1000
+    },
+    "owt": {
+      "directory": "datasets:owt/processed/bpe1000-small-v1",
+      "vocab_size": 1000
+    }
+  },
+  "cpu": {
+    "description": "讲义 CPU 低资源规模：40,960,000 个训练词元；耗时取决于机器",
+    "device": "cpu",
+    "num_threads": 2,
+    "d_model": 512,
+    "num_layers": 4,
+    "num_heads": 16,
+    "d_ff": 1344,
+    "context_length": 256,
+    "batch_size": 32,
+    "num_steps": 5000,
+    "warmup_iters": 100,
+    "eval_interval": 100,
+    "eval_batches": 20,
+    "sample_tokens": 256,
+    "tinystories": {
+      "directory": "datasets:tinystories/processed/bpe10000-v1",
+      "vocab_size": 10000
+    },
+    "owt": {
+      "directory": "datasets:owt/processed/bpe32000-v1",
+      "vocab_size": 32000
+    }
+  },
+  "gpu": {
+    "description": "讲义基线规模：327,680,000 个训练词元；需要自行准备 GPU",
+    "device": "cuda",
+    "num_threads": 4,
+    "d_model": 512,
+    "num_layers": 4,
+    "num_heads": 16,
+    "d_ff": 1344,
+    "context_length": 256,
+    "batch_size": 32,
+    "num_steps": 40000,
+    "warmup_iters": 1000,
+    "eval_interval": 500,
+    "eval_batches": 20,
+    "sample_tokens": 256,
+    "tinystories": {
+      "directory": "datasets:tinystories/processed/bpe10000-v1",
+      "vocab_size": 10000
+    },
+    "owt": {
+      "directory": "datasets:owt/processed/bpe32000-v1",
+      "vocab_size": 32000
+    }
+  }
+}
